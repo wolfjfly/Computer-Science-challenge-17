@@ -1,11 +1,11 @@
 # Regex Tutorial Starter Code
-^ matches the starting of the sentence.
-[a-zA-Z0-9+_.-] matches one character from the English alphabet (both cases), digits, “+”, “_”, “.” and, “-” before the @ symbol.
-+ indicates the repetition of the above-mentioned set of characters one or more times.
-@ matches itself.
-[a-zA-Z0-9.-] matches one character from the English alphabet (both cases), digits, “.” and “–” after the @ symbol.
-$ indicates the end of the sentence.
-# Match an Email - Regex Tutorial 
+^ matches the starting of the sentence.   
+[a-zA-Z0-9+_.-] matches one character from the English alphabet (both cases), digits, “+”, “_”, “.” and, “-” before the @ symbol.   
++ indicates the repetition of the above-mentioned set of characters one or more times.   
+@ matches itself.   
+[a-zA-Z0-9.-] matches one character from the English alphabet (both cases), digits, “.” and “–” after the @ symbol.   
+$ indicates the end of the sentence.   
+# Match an Email - Regex Tutorial    
 
 This tutorial is going to explain the use of regex to match emails using the expression `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`. This can be useful when validating emails using applications/technologies such as Node (Inqurier) or MongoDB.
 
