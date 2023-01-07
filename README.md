@@ -1,15 +1,18 @@
-# Regex Tutorial  
-This tutorial is going to explain the use of regex to match emails using the expression  
-`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`. 
+# Regex Tutorial / Computer Science Challenge 17
+This tutorial will walk through how regex can be applied to match email addresses using the expression  
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` 
 
 ## ***_Summary_***
 
-A regular expression is a sequence of characters that defines a search pattern. This is commonly used to find patterns within a string, find/replace characters within a string or validate input. This tutortial will go walk through the components of a regex and how it applies to matching an email. 
-
+***Regex*** is short for ***Regular Expression***.  
+A regular expression is a sequence of characters that forms a search pattern.  
+When you search for data in a text, you can use this search pattern to describe what you are searching for.  
+A regular expression can be a single character, or a more complicated pattern.  
+Regular expressions can be used to perform all types of text search and text replace operations.
+  
 ## Table of Contents
 
-- [Regular Expression](#regular-expression)
-- [RFC 5322 Standard](#rfc-5322)
+- [RFC 5322 Standard](#rfc-5322-standard)
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
 - [Character Sets](#character-sets)
@@ -19,21 +22,13 @@ A regular expression is a sequence of characters that defines a search pattern. 
 - [Resources](#resources)
 
 ## ***_Regex Components_***  
-<br>  
-
-### ***_Regular Expression_***
-Regex is short for Regular Expression.  
-A regular expression is a sequence of characters that forms a search pattern.  
-When you search for data in a text, you can use this search pattern to describe what you are searching for.  
-A regular expression can be a single character, or a more complicated pattern.  
-Regular expressions can be used to perform all types of text search and text replace operations.  
-<br>    
+<br>   
 
 ### ***_RFC 5322 Standard_***
 The official standard is known as RFC 5322. It describes the syntax that valid email addresses must adhere to.  
 RFC 5322 leaves the domain name part open to implementation-specific choices that won’t work on the Internet today.  
 The regex implements the “preferred” syntax from RFC 1035 which is one of the recommendations in RFC 5322.
-It is not recomended to implement the RFC 5322 standard in your code. However you should be aware, that there is an official standard.   
+***It is not recomended to implement the RFC 5322 standard in your code. However you should be aware, that there is an official standard***.   
 <br>  
 
 ### ***_Anchors_***
